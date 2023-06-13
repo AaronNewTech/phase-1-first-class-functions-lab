@@ -11,14 +11,13 @@ const returnFirstTwoDrivers = function(drivers) {
 const returnLastTwoDrivers = function(drivers) {   
 
     const lastTwoArray = drivers.slice(2, 4)
-    console.log(lastTwoArray)
     return lastTwoArray
     
 }
 
 const selectingDrivers = [returnFirstTwoDrivers,returnLastTwoDrivers]
 
-console.log(selectingDrivers)
+
 
 const createFareMultiplier = function(fare) {
     
@@ -29,22 +28,18 @@ const createFareMultiplier = function(fare) {
 }
 
 const fareDoubler = function(createFareMultiplier) {
-    // console.log(createFareMultiplier * 2)
+  
     let fare = createFareMultiplier * 2
-    console.log(fare)
     return fare
 }
 
 const fareTripler = function(createFareMultiplier) {
-    // console.log(createFareMultiplier * 2)
+    
     let fare = createFareMultiplier * 3
-    console.log(fare)
     return fare
 }
 
 const selectDifferentDrivers = function (drivers, myFunction) {
-    console.log(returnFirstTwoDrivers)
-    console.log('test')
     
     if (myFunction === returnFirstTwoDrivers) {
         
@@ -54,6 +49,5 @@ const selectDifferentDrivers = function (drivers, myFunction) {
     else {
         return returnLastTwoDrivers(drivers)
     }
-    
     
 }
